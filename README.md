@@ -1,6 +1,8 @@
 # Balance-Mapper
 a program to plan your income and spending.
 
+# Main language in the ui is Arabic but the code is self explanitory.
+
 # What is used in it?
 I used the following:
 <br>
