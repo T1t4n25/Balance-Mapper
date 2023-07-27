@@ -16,31 +16,31 @@ import java.util.ResourceBundle;
 
 public class DataTableController implements Initializable{
     @FXML
-    private TableColumn<cashRec, Double> cashCol;
+    private TableColumn<cashRecord, Double> cashCol;
 
     @FXML
-    private TableView<cashRec> cashTable;
+    private TableView<cashRecord> cashTable;
 
     @FXML
-    private TableColumn<cashRec, String> categoryCol;
+    private TableColumn<cashRecord, String> categoryCol;
 
     @FXML
-    private TableColumn<cashRec, Date> dateCol;
+    private TableColumn<cashRecord, Date> dateCol;
 
     @FXML
-    private TableColumn<cashRec, String> commCol;
+    private TableColumn<cashRecord, String> commCol;
 
     @FXML
-    private TableColumn<cashRec, Integer> idCol;
+    private TableColumn<cashRecord, Integer> idCol;
 
     @FXML
-    private TableColumn<cashRec, String> nameCol;
+    private TableColumn<cashRecord, String> nameCol;
     int id;
     double cash;
     String name, category, comment;
     Date date;
 
-    ObservableList<cashRec> data;
+    ObservableList<cashRecord> data;
 
     public DataTableController() throws SQLException {
         DBConnection.getConnect();
@@ -54,7 +54,7 @@ public class DataTableController implements Initializable{
             category = resultSet.getString("category");
             date = resultSet.getDate("cashDate");
             comment = resultSet.getString("cashComms");
-            data.add(new cashRec(id, name, cash, category, date, comment));
+            data.add(new cashRecord(id, name, cash, category, date, comment));
         }
     }
 

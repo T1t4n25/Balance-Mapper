@@ -2,7 +2,7 @@ package com.zeyadh.balancemapper;
 
 import java.util.Date;
 
-public class cashRec {
+public class cashRecord {
     int id;
     String category;
     Double cash;
@@ -10,7 +10,7 @@ public class cashRec {
     String comments;
     Date date;
 
-    public cashRec(int id, String name, Double cash, String category, Date date, String comments) {
+    public cashRecord(int id, String name, Double cash, String category, Date date, String comments) {
         this.id = id;
         this.name = name;
         this.cash = cash;
