@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zeyadh.balancemapper.DataTableController">
+   <children>
+      <TableView fx:id="cashTable" layoutX="7.0" layoutY="79.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="617.0" prefWidth="680.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="29.60009765625" text="ID" />
+          <TableColumn fx:id="nameCol" editable="false" prefWidth="137.60003662109375" text="الأسم" />
+          <TableColumn fx:id="cashCol" editable="false" minWidth="0.0" prefWidth="101.60000610351562" text="المبلغ" />
+            <TableColumn fx:id="categoryCol" editable="false" prefWidth="110.4000244140625" text="الفئة" />
+            <TableColumn fx:id="dateCol" editable="false" prefWidth="132.00003051757812" text="التاريخ" />
+            <TableColumn fx:id="commCol" editable="false" minWidth="0.0" prefWidth="167.2000732421875" text="ملاحظات" />
+        </columns>
+      </TableView>
+      <Label layoutX="198.0" layoutY="26.0" text="قائمة المصروفات">
+         <font>
+            <Font name="Arial Black" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
